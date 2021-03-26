@@ -1,0 +1,12 @@
+README.md
+setup.py
+tamilang/__init__.py
+tamilang/__main__.py
+tamilang/charmaps.py
+tamilang/translate.py
+tamilang.egg-info/PKG-INFO
+tamilang.egg-info/SOURCES.txt
+tamilang.egg-info/dependency_links.txt
+tamilang.egg-info/entry_points.txt
+tamilang.egg-info/requires.txt
+tamilang.egg-info/top_level.txt

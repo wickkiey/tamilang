@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tamilang
+Version: 1.0.0
+Summary: Translates tamil words to english phonetic
+Home-page: https://github.com/wickkiey/tamilang
+Author: Wickkiey
+Author-email: wickkiey@gmail.com
+License: MIT
+Description: # TamiLang
+        
+        ## Phonetic Translation
+        
+        This package helps to reac tamil through english phonetics. 
+        It will be helpful for people who wants to learn tamil through english. 
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
