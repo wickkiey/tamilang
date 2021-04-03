@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# encoding: utf-8
 tamil_to_eng = {
   "அ": "a",
   "ஆ": "aa",

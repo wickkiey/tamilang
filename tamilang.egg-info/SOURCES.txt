@@ -1,5 +1,8 @@
 README.md
 setup.py
+.vscode/settings.json
+dist/tamilang-1.0.0-py3-none-any.whl
+dist/tamilang-1.0.0.tar.gz
 tamilang/__init__.py
 tamilang/__main__.py
 tamilang/charmaps.py
@@ -10,3 +13,7 @@ tamilang.egg-info/dependency_links.txt
 tamilang.egg-info/entry_points.txt
 tamilang.egg-info/requires.txt
 tamilang.egg-info/top_level.txt
+tamilang/__pycache__/__init__.cpython-37.pyc
+tamilang/__pycache__/__main__.cpython-37.pyc
+tamilang/__pycache__/charmaps.cpython-37.pyc
+tamilang/__pycache__/translate.cpython-37.pyc

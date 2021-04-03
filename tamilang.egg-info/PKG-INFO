@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: tamilang
-Version: 1.0.0
+Version: 1.0.1
 Summary: Translates tamil words to english phonetic
 Home-page: https://github.com/wickkiey/tamilang
 Author: Wickkiey
@@ -12,6 +12,10 @@ Description: # TamiLang
         
         This package helps to reac tamil through english phonetics. 
         It will be helpful for people who wants to learn tamil through english. 
+        
+        ## Command line usage
+        
+        `python -m tamilang "tamilword"`
         
         
 Platform: UNKNOWN

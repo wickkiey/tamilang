@@ -1,5 +1,5 @@
 from tamil import utf8
-from charmaps import tamil_to_eng
+from tamilang.charmaps import tamil_to_eng
 
 def tamil_2_eng_phonetic(text):
     chars = utf8.get_letters(text)

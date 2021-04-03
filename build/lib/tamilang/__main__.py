@@ -1,9 +1,9 @@
-from charmaps import tamil_to_eng
+from tamilang.charmaps import tamil_to_eng
 
 import sys 
 from importlib import resources
 
-from translate import tamil_2_eng_phonetic
+from tamilang.translate import tamil_2_eng_phonetic
 
 def main():
     if len(sys.argv) > 1:
