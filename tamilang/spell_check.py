@@ -14,11 +14,22 @@ def is_valid_char(char):
 
 def check_otru(text1,text2):
 
-    #6.1.1 சுட்டு, வினா அடியாகத் தோன்றிய சொற்கள் முன் வல்லினம் மிகல்
+    
     text1_split = [split_map[k] for k in split_text(text1)]
     text2_split = [split_map[k] for k in split_text(text2)]
 
+    # 6.1.1 சுட்டு, வினா அடியாகத் தோன்றிய சொற்கள் முன் வல்லினம் மிகல்
     if (text1 in suttu_vina_words) and (text2[0][0] in vallina_mei):
         return text1 + text2_split[0][0], text2
+
+    # 6.1.2 ஓர் எழுத்துச் சொற்களின் முன் வல்லினம் மிகல்
+    if (len(text1_split)==1) and (text2[0][0] in vallina_mei):
+        return text1 + text2_split[0][0], text2
+
+    # 6.1.3 குற்றியலுகரச் சொற்கள் முன் வல்லினம் மிகல்
+    
+
+
+    
     
     
