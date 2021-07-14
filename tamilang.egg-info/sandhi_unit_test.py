@@ -1,5 +1,5 @@
 import regex
-
+from tamilang.spell_check import check_otru, fix_otru
 def split_text(text):
     return regex.findall(r'\X', text, regex.U)
 
@@ -10,10 +10,14 @@ def split_test_data(text):
     for line in lines:
         if line !='':
             split1 = line.split(' = ')
-            result[tuple(split1[0].split(' + '))] = split1[0]
+            result[tuple(split1[0].split(' + '))] = split1[1].strip()
     
     return result
 
+def unit_test(data):
+    for k,v in data.items():
+        if v != fix_otru(*k):
+            print(f"Expected `{v}` Actual `{fix_otru(*k)}` ")
 
 
 # 6.1.1 சுட்டு, வினா அடியாகத் தோன்றிய சொற்கள் முன் வல்லினம் மிகல்
@@ -34,7 +38,7 @@ examples_611 = """
 """
 
 # 6.1.2 ஓர் எழுத்துச் சொற்களின் முன் வல்லினம் மிகல்
-example_612 = """
+examples_612 = """
 கை + குழந்தை = கைக்குழந்தை
 கை + பிடி = கைப்பிடி
 தீ + பிடித்தது = தீப்பிடித்தது
@@ -46,4 +50,14 @@ example_612 = """
 பூ + பல்லக்கு = பூப்பல்லக்கு
 மை + கூடு = மைக்கூடு
 மை + பேனா = மைப்பேனா
+"""
+
+# 6.1.3 குற்றியலுகரச் சொற்கள் முன் வல்லினம் மிகல்
+examples_613 = """
+பாக்கு + தோப்பு = பாக்குத்தோப்பு
+அச்சு + புத்தகம் = அச்சுப்புத்தகம்
+எட்டு + தொகை = எட்டுத்தொகை
+பத்து + பாட்டு = பத்துப்பாட்டு
+இனிப்பு + சுவை = இனிப்புச்சுவை
+கற்று + கொடுத்தான் = கற்றுக்கொடுத்தான்
 """
